@@ -8,14 +8,14 @@
 <body>
     <div class="calculator">
         <h1>Calculadora Básica</h1>
-        <form id="calcForm">
-            <input type="number" id="num1" placeholder="Número 1" required>
-            <input type="number" id="num2" placeholder="Número 2" required>
+        <form id="calcForm" action="./calculadora-php/calculadora.php" method="post">
+            <input type="number" id="num1" placeholder="Número 1" name="num1" required>
+            <input type="number" id="num2" placeholder="Número 2" name="num2" required>
             <br>
-            <button type="button" >Suma</button>
-            <button type="button" >Resta</button>
-            <button type="button" >Multiplicación</button>
-            <button type="button" >División</button>
+            <button type="submit" name="suma" value="suma">Suma</button>
+            <button type="submit" name="resta" value="resta">Resta</button>
+            <button type="submit" name="multiplicacion" value="multiplicacion">Multiplicación</button>
+            <button type="submit" name="division" value="division">División</button>
         </form>
         <div class="result" id="result">Resultado: </div>
     </div>
