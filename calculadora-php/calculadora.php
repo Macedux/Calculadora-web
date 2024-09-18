@@ -10,12 +10,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $resultado = 0;
 
     // Realiza la operación seleccionada
-    if ($operacion == 'suma') {
-        $resultado = $num1 + $num2;
-        $operacion_realizada = "suma";
-    } elseif ($operacion == 'resta') {
-        $resultado = $num1 - $num2;
-        $operacion_realizada = "resta";
+    if ($operacion == 'multiplicacion') {
+        $resultado = $num1 * $num2;
+        $operacion_realizada = "multiplicacion";
+    } elseif ($operacion == 'division') {
+        $resultado = $num1 / $num2;
+        $operacion_realizada = "division";
     }
 
     // Muestra el resultado
@@ -24,6 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo '<a href="index.html">Volver a la calculadora</a>';
 } else {
     // Si se intenta acceder directamente a calculadora.php sin enviar el formulario
-    echo "No se ha enviado ningún dato.";
+    echo "No hay nada que enviar.";
 }
 ?>
