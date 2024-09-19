@@ -31,5 +31,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Si se intenta acceder directamente a calculadora.php sin enviar el formulario
     echo "No hay nada que enviar.";
 }
+}
 ?>
-
