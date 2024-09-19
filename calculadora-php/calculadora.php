@@ -10,15 +10,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $resultado = 0;
 
     // Realiza la operación seleccionada
-<<<<<<< HEAD
-=======
     if ($operacion == 'suma') {
         $resultado = $num1 + $num2;
         $operacion_realizada = "suma";
     } elseif ($operacion == 'resta') {
         $resultado = $num1 - $num2;
         $operacion_realizada = "resta";
->>>>>>> b4eb685 (Añadida la funcionalidad de multilpicar y dividir)
     if ($operacion == 'multiplicacion') {
         $resultado = $num1 * $num2;
         $operacion_realizada = "multiplicacion";
